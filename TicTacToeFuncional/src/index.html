@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="out/production/TicTacToeFunctional/lib/kotlin.js"></script>
+    <script src="out/production/TicTacToeFunctional/TicTacToeFunctional.js"></script>
+
+</head>
+
+<body>
+<center><h1>Bem Vindo ao Jogo da velha</h1> </center>
+
+<center>
+        <div>
+            <table>
+                <tr>
+                    <td id="00" onClick="TicTacToeFunctional.fillCell('00')" >-</td>
+                    <td id="01" onClick="TicTacToeFunctional.fillCell('01')" >-</td>
+                    <td id="02" onClick="TicTacToeFunctional.fillCell('02')" >-</td>
+                </tr>
+                <tr>
+                    <td id="10" onClick="TicTacToeFunctional.fillCell('10')" >-</td>
+                    <td id="11" onClick="TicTacToeFunctional.fillCell('11')" >-</td>
+                    <td id="12" onClick="TicTacToeFunctional.fillCell('12')" >-</td>
+
+                </tr>
+                <tr>
+                    <td id="20" onClick="TicTacToeFunctional.fillCell('20')" >-</td>
+                    <td id="21" onClick="TicTacToeFunctional.fillCell('21')" >-</td>
+                    <td id="22" onClick="TicTacToeFunctional.fillCell('22')" >-</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="showResult">
+            <hr> <b>Rodada: <span id="TurnNumber"></span> </b> <br>
+            <b> Quem está na vez: <span id="TurnIcon">X</span></b> <hr>
+        </div>
+
+    </center>
+</body>
+</html>
